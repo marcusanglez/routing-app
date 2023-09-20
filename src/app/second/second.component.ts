@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-second',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent {
+  @Input()
+  setId(id:string){
+    // this.localVar =  someService.getSomeObject(id)
+  }
 
 }
